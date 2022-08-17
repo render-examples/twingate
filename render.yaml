@@ -4,6 +4,7 @@ services:
     name: twingate-connector
     branch: main
     env: docker
+    autoDeploy: false
     dockerfilePath: ./twingate/Dockerfile
     dockerContext: ./twingate
     envVars:
