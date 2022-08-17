@@ -17,15 +17,3 @@ services:
         value: "v1"
       - key: TWINGATE_LABEL_DEPLOYEDBY
         value: "render"
-  # this is a stand-in for a private web service in your Render team
-  - type: pserv
-    name: twingate-private-service
-    branch: main
-    env: docker
-    dockerFilePath: ./example-pserv
-    dockerContext: ./example-pserv
-
-databases:
-  - name: twingate-postgres
-    type: postgres
-    plan: starter
